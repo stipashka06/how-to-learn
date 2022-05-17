@@ -105,6 +105,7 @@
   min-height: 350px;
   background-color: #000;
   position: relative;
+  padding: 60px 5% 40px;
 }
 
 .logo_place_header {
@@ -126,8 +127,7 @@
 }
 
 .table_theme_dark {
-  /* заполнить модификатор */
-
+  color: #fff;
 }
 
 .logo_place_footer {
@@ -249,7 +249,7 @@
 .kaufman__triangle {
   display: inline-block;
   background-image: url(../images/kaufman-triangle.svg);
-  background-size: cover;
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -259,11 +259,9 @@
 
 .footer__columns {
   display: flex;
-
-  width: 90%;
-  margin: 60px 5% 40px;
-  justify-content: space-between;
+  width: 100%;
   position: relative;
+  justify-content: space-between;
 }
 
 .footer__author {
@@ -305,18 +303,15 @@
 }
 
 .table__cell_theme_dark {
-  color: #fff;
   margin: 80px 0 0;
   width: 200px;
 }
 
 .table__heading_theme_dark {
-  color: #fff;
   margin: 0;
 }
 
 .table__text_theme_dark {
-  color: #fff;
   margin: 20px 0 0;
 }
 
