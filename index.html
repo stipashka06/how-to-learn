@@ -13,7 +13,7 @@
       content="Яндекс Практикум, веб- програмирование, учиться, метод Фейнмана,принципы Джоша Кауфмана,"
     />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
   <body class="page">
@@ -124,26 +124,48 @@
       <section class="video">
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe
-            class="video__iframe"
-            width="515"
-            height="316"
-            src="https://www.youtube.com/embed/5MgBikgcWnY"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            class="video__iframe"
-            width="515"
-            height="316"
-            src="https://www.youtube.com/embed/arj7oStGLkU"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <ul class="video__iframes">
+          <li class="video__iframe">
+            <iframe
+              width="515"
+              height="316"
+              src="https://www.youtube.com/embed/5MgBikgcWnY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+          <li class="video__iframe">
+            <iframe
+              width="515"
+              height="316"
+              src="https://www.youtube.com/embed/arj7oStGLkU"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+          <li class="video__iframe">
+            <iframe
+              width="515"
+              height="316"
+              src="https://www.youtube.com/embed/xeCZwYDy_PU?list=PL5_s7xdj2Vsw-bCx5nOZJMFIiHwRgok--"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+          <li class="video__iframe">
+            <iframe
+              width="515"
+              height="316"
+              src="https://www.youtube.com/embed/vkq7ckCkvjY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </li>
+        </ul>
       </section>
       <section class="oakley" aria-label="История Барбары Оакли">
         <article class="two-columns">
@@ -217,18 +239,25 @@
       </section>
       <section class="khan">
         <div class="khan__container">
+          <!-- Доброго дня, Алена! Спасибо вам за аргументированные замечания.
+            Они позволяют более подробнее вникать в суть программирования.
+            С классами khan__title и khan__author так и хотел изначально поступить.
+            Потом подумал, что бы повысить продажи аудиокниги для незрячих посетителей сайта, лучше им услышать заголовок не абстрактной фразы "Весь мир - школа",
+            а с обозначением автора "Салман Хан Весь мир - школа.
+            Это позволит ему понять, что раздел посвящен книге и не в коем случае сборнику абстрактных фраз.
+            Что скажите? Интересно ваше мнение.-->
           <h2 class="khan__title">
             <span class="khan__author">Салман Хан </span>
             <span>Весь мир - школа</span>
           </h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов
             студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
             всем, кто занимается образованием — так учащиеся повсюду смогут
             получить навыки и знания, которые приносят успех в школе, карьере и
             жизни.
-          </p>
-          <p class="khan__quote-author">Джордж Лукао</p>
+          </blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img
@@ -236,7 +265,7 @@
               src="./images/khan-book.jpg"
               alt="Обложка книги Весь мир - школа. Салман Хан"
             />
-            <p><a class="khan__buy-link" href="#">Купить книгу &rarr;</a></p>
+            <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
           </div>
         </div>
       </section>
@@ -316,22 +345,32 @@
         <p class="section-subtitle">
           Больше материалов о техниках и лайфхаков обучения
         </p>
-        <nav class="logo-zone">
-          <a class="resources__link" href="#">
-            <img src="./images/logo/resources-arzamas.svg" alt="Иконка Arzamas"
+        <div class="resources__logo-zone">
+          <a class="resources__link" href="#" target="_blank">
+            <img
+              class="resources__logo"
+              src="./images/logo/resources-arzamas.svg"
+              alt="Иконка Arzamas"
           /></a>
-          <a class="resources__link" href="#">
-            <img src="./images/logo/resources-n1.svg" alt="Иконка N1"
+          <a class="resources__link" href="#" target="_blank">
+            <img
+              class="resources__logo"
+              src="./images/logo/resources-n1.svg"
+              alt="Иконка N1"
           /></a>
-          <a class="resources__link" href="#"
+          <a class="resources__link" href="#" target="_blank"
             ><img
+              class="resources__logo"
               src="./images/logo/resources-strelka.svg"
               alt="Иконка Strelka"
           /></a>
-          <a class="resources__link" href="#">
-            <img src="./images/logo/resources-polka.svg" alt="Иконка Polka"
+          <a class="resources__link" href="#" target="_blank">
+            <img
+              class="resources__logo"
+              src="./images/logo/resources-polka.svg"
+              alt="Иконка Polka"
           /></a>
-        </nav>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -349,9 +388,9 @@
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
-          <p class="footer__column-heading">Соцсети</p>
+          <h2 class="footer__column-heading">Соцсети</h2>
           <nav class="footer__column-links">
-            <a class="footer__column-link" href="#"
+            <a class="footer__column-link" href="#" target="_blank"
               ><img
                 class="footer__social-icon"
                 src="./images/facebook_color_white.svg"
@@ -359,7 +398,7 @@
               />
               Facebook</a
             >
-            <a class="footer__column-link" href="#"
+            <a class="footer__column-link" href="#" target="_blank"
               ><img
                 class="footer__social-icon"
                 src="./images/vk_color_white.svg"
@@ -367,7 +406,7 @@
               />
               ВКонтакте</a
             >
-            <a class="footer__column-link" href="#"
+            <a class="footer__column-link" href="#" target="_blank"
               ><img
                 class="footer__social-icon"
                 src="./images/instagram_color_white.svg"

@@ -2,7 +2,7 @@
   display: flex;
   min-height: 350px;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: #1f1f1f;
   position: relative;
   padding: 60px 5% 40px;
 }
